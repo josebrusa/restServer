@@ -4,8 +4,8 @@ const colors = require('colors');
 const Server = require('./models/server');
 
 console.clear();
-console.log('=================='.bgGreen);
-console.log(' Init the Server'.cyan);
+console.log('==================\n'.bgGreen);
+console.log(' Init the Server\n'.cyan);
 console.log('==================\n'.bgGreen);
 
 
