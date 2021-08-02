@@ -7,17 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box div {
+            width: 400px;
+            height: 400px;
+            background: rgb(121, 121, 121);
+            margin: 5%;
+        }
+
         h1 {
-            color: blue;
+            color: white;
             font-family: verdana;
-            font-size: 300%;
             text-align: center;
+            font-size: 300%;
+            padding-top: 25%;
         }
     </style>
 </head>
 
 <body>
-    <h1>Acceso Denegado</h1>
+    <div class="box">
+        <div>
+            <h1>Acceso Denegado</h1>
+        </div>
+    </div>
 </body>
 
 </html>
