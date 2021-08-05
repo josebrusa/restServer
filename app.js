@@ -5,7 +5,7 @@ const Server = require('./models/server');
 
 console.clear();
 console.log('==================\n'.bgGreen);
-console.log(' Init the Server\n'.cyan);
+console.log(' the Server Init \n'.cyan);
 console.log('==================\n'.bgGreen);
 
 
