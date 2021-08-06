@@ -6,9 +6,9 @@ const dbConnection = async () => {
         console.log(process.env.MONGODB_ST)
 
         await mongoose.connect( process.env.MONGODB_ST, {
-            // useNewUrlParser: true,
-            // useUnifiedTopology: true,
-            // useCreateIndex: true,
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            useCreateIndex: true,
             // useFindAndModify: false
         });
 
