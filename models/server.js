@@ -9,12 +9,13 @@ class Server {
         this.app = express();
         this.port = process.env.PORT;
 
+
         this.usuariosPath = '/api/usuarios';
         this.authPath = '/api/auth';
 
         this.conectarDB();
 
-        this.middleware();
+        this.middlewares();
 
         this.routes();
     }
@@ -23,7 +24,7 @@ class Server {
         await dbConnection();
     }
 
-    middleware() {
+    middlewares() {
 
         this.app.use( cors() );
 
@@ -43,6 +44,7 @@ class Server {
         });
     }
 }
+
 
 
 

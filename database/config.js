@@ -3,13 +3,16 @@ const mongoose = require('mongoose')
 const dbConnection = async () => {
 
     try {
+        console.log(process.env.MONGODB_ST)
 
         await mongoose.connect( process.env.MONGODB_ST, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useCreateIndex: true,
-            useFindAndModify: false
+            // useNewUrlParser: true,
+            // useUnifiedTopology: true,
+            // useCreateIndex: true,
+            // useFindAndModify: false
         });
+
+
 
         console.log('Database Init');
 
