@@ -4,9 +4,9 @@ const { check } = require('express-validator');
 const { validarCampos } = require('../middlewares/validar-campos')
 const { esRoleValido, correoExiste, existeUsuarioPorId } = require('../helpers/db-validators')
 const { usuariosGet, usuariosPut, usuariosPost, usuariosDelete, usuariosPatch } = require('../controllers/usuarios')
+
+
 const router = Router();
-
-
 router.get('/', usuariosGet);
 
 router.put('/:id', [
