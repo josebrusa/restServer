@@ -1,20 +1,18 @@
 const mongoose = require('mongoose')
 
-const dbConnection = async () => {
+const dbConnection =  () => {
 
     try {
 
-        await mongoose.connect( process.env.MONGODB_CNN, {
+        mongoose.connect( process.env.MONGODB_CNN, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            useCreateIndex: true,
-            useFindAndModify: false
+            useFindAndModify: false,
+            useCreateIndex: true
         });
-
-
         console.log('Database Init');
 
-    } catch (error) {
+    }catch (error) {
         console.log(error);
         throw new Error('Error de incio a la DB');
     }
