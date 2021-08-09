@@ -13,7 +13,6 @@ const dbConnection = async () => {
 
 
         console.log('Database Init');
-        console.log(mongoose.connect( process.env.MONGODB_CNN));
 
     } catch (error) {
         console.log(error);
